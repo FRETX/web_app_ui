@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="14px" viewBox="0 0 27 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mouse-Click-on-Share" transform="translate(-1074.000000, -121.000000)" fill="#FFFFFF">
+            <g id="top-btns" transform="translate(812.000000, 110.000000)">
+                <g id="share">
+                    <g id="fb">
+                        <g id="url" transform="translate(220.000000, 0.000000)">
+                            <g id="Group-3" transform="translate(27.000000, 11.000000)">
+                                <path d="M17.5333333,7 C17.5333333,4.606 19.3866667,2.66 21.6666667,2.66 L27,2.66 L27,0 L21.6666667,0 C17.9866667,0 15,3.136 15,7 C15,10.864 17.9866667,14 21.6666667,14 L27,14 L27,11.34 L21.6666667,11.34 C19.3866667,11.34 17.5333333,9.394 17.5333333,7 Z M23,9 L34,9 L34,6 L23,6 L23,9 Z M35.3333333,0 L30,0 L30,2.66 L35.3333333,2.66 C37.6133333,2.66 39.4666667,4.606 39.4666667,7 C39.4666667,9.394 37.6133333,11.34 35.3333333,11.34 L30,11.34 L30,14 L35.3333333,14 C39.0133333,14 42,10.864 42,7 C42,3.136 39.0133333,0 35.3333333,0 Z" id="Page-1"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

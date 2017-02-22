@@ -40,11 +40,122 @@
 			Get FretX
 		</a>
 		<div class="header-links">
-			<a href="#">Login</a>
+			<a href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a>
+			<a href="#" data-toggle="modal" data-target="#loginModal">Login</a>
 		</div>
 	
 	</div>
 </header>
+
+<section class="player-top-btns mini">
+	<div class="container">
+		
+		<div class="col-md-6">
+			<a href="#" class="btn view-songs">
+				<img src="images/plus-ico.png" alt="">
+				Create new song
+				<input type="text" class="form-control custom-input" placeholder="Search for Songs & Artists">
+			</a>
+			<div class="song-list-holder">
+				<div class="song-list">
+					<a href="#" class="song">
+						<div class="song-info">
+							<img src="images/song-thumbnail.jpg" alt="">
+							<h4>Bon Jovi</h4>
+							<h5>Born Again Tomorrow</h5>
+							<span class="duration">03:45</span>
+						</div>
+					</a>
+					<a href="#" class="song">
+						<div class="song-info">
+							<img src="images/song-thumbnail.jpg" alt="">
+							<h4>Bon Jovi</h4>
+							<h5>Born Again Tomorrow</h5>
+							<span class="duration">03:45</span>
+						</div>
+					</a>
+					<a href="#" class="song">
+						<div class="song-info">
+							<img src="images/song-thumbnail.jpg" alt="">
+							<h4>Bon Jovi</h4>
+							<h5>Born Again Tomorrow</h5>
+							<span class="duration">03:45</span>
+						</div>
+					</a>
+					<a href="#" class="song">
+						<div class="song-info">
+							<img src="images/song-thumbnail.jpg" alt="">
+							<h4>Bon Jovi</h4>
+							<h5>Born Again Tomorrow</h5>
+							<span class="duration">03:45</span>
+						</div>
+					</a>
+					<a href="#" class="song">
+						<div class="song-info">
+							<img src="images/song-thumbnail.jpg" alt="">
+							<h4>Bon Jovi</h4>
+							<h5>Born Again Tomorrow</h5>
+							<span class="duration">03:45</span>
+						</div>
+					</a>
+					<a href="#" class="song">
+						<div class="song-info">
+							<img src="images/song-thumbnail.jpg" alt="">
+							<h4>Bon Jovi</h4>
+							<h5>Born Again Tomorrow</h5>
+							<span class="duration">03:45</span>
+						</div>
+					</a>
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="col-md-6">
+			<div class="share-song-holder">
+				<a href="#" class="btn share-song publish">
+					<img src="images/share-ico.png" alt="">
+					Publish/Unpublish
+				</a>
+				<div class="publish-options">
+
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Artist">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Title">
+					</div>
+					<div class="form-group">
+						<select name="genreSelect" id="genreSelect" class="form-control">
+							<option value="0">Genre</option>
+							<option value="1">Rock</option>
+							<option value="2">Jazz</option>
+							<option value="3">Rock</option>
+							<option value="4">Jazz</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<select name="diffSelect" id="diffSelect" class="form-control">
+							<option value="0">Difficulty</option>
+							<option value="1">Easy</option>
+							<option value="2">Beginner</option>
+							<option value="3">Hard</option>
+							<option value="4">Easy</option>
+						</select>
+					</div>
+					<div class="submit-holder">
+						<a href="#" class="btn">
+							<img src="images/rock-ico.png" alt="">
+							Publish
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
 
 <section class="fret-with-video smaller">
 	<div class="container">
@@ -204,9 +315,150 @@
 </section>
 
 
+<div id="loginModal" class="modal fade login-signup-flow" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+
+	    <div class="modal-content">
+		    <div class="modal-body">
+				<a href="#" class="btn fb">
+		        	<img src="images/fb-ico.svg" alt="">
+		        	Login with Facebook
+		        </a>
+		        <span class="text-separator">or</span>
+		        <form class="login-form">
+		        	<div class="form-group">
+		        		<input type="text" placeholder="Email or Username" class="form-control">
+		        	</div>
+		        	<div class="form-group">
+		        		<input type="password" placeholder="Password" class="form-control">
+		        	</div>
+		        	<a href="#" class="bttn submit-btn">
+			        	Login
+			        </a>
+		        </form>
+		        <div class="account-separated">
+		        	<h4>
+		        		Don't have an account?
+		        	</h4>
+		        	<a href="#" data-toggle="modal" data-target="#signupModal" data-dismiss="modal" class="modal-redirect">
+		        		Sign Up
+		        	</a>
+		        </div>	
+	      	</div>
+	    </div>
+
+	</div>
+</div>
+
+<div id="signupModal" class="modal fade login-signup-flow" tabindex="-1" role="dialog">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	      	<h3>
+	      		Signup today to lorem ipsum dolor sit amet and lem yelid ve lem yuled
+	      	</h3>
+	      	<a href="#" class="btn fb">
+	        	<img src="images/fb-ico.svg" alt="">
+	        	Sign up with Facebook
+	        </a>
+	        <a href="#" class="btn tw">
+	        	<img src="images/tw-ico.svg" alt="">
+	        	Sign up with Twitter
+	        </a>
+	        <span class="separator-text">or</span>
+	        <a href="#" class="btn email">
+	        	<img src="images/mail-ico.svg" alt="">
+	        	Sign up with Email
+	        </a>
+
+	        <div class="account-separated">
+	        	<h4>
+	        		Already a member?
+	        	</h4>
+	        	<a href="#" data-toggle="modal" data-target="#loginModal" data-dismiss="modal" class="modal-redirect">
+	        		Login
+	        	</a>
+	        </div>	
+
+	      </div>
+	    </div>
+	  </div>
+</div>
+
+<div id="signupModalMail" class="modal fade login-signup-flow" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+
+  		<a href="#" class="btn fb">
+        	<img src="images/fb-ico.svg" alt="">
+        	Sign up with Facebook
+        </a>
+        <span class="text-separator">or</span>
+        <form class="signup-form">
+        	<div class="form-group">
+        		<input type="email" placeholder="Email Adress" class="form-control">
+        	</div>
+        	<div class="form-group">
+        		<input type="text" placeholder="Name & Surname" class="form-control">
+        	</div>
+        	<div class="form-group">
+        		<input type="text" placeholder="Username" class="form-control">
+        	</div>
+        	<div class="form-group">
+        		<input type="password" placeholder="Password" class="form-control">
+        	</div>
+
+        	<a href="#" class="btn submit-btn">
+	        	Sign Up
+	        </a>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <!-- Scripts -->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
+<script>
+	$('.player-top-btns .view-songs').click(function(){
+		$(this).addClass('input-visible');
+		$(this).children('.custom-input').focus();
+	})
+
+	$(document).click(function (e){
+	    var btnContainer = $(".player-top-btns .view-songs, .song-list");
+
+	    if (!btnContainer.is(e.target) && btnContainer.has(e.target).length === 0){
+	        btnContainer.removeClass('input-visible');
+	        btnContainer.removeClass('results-visible');
+	        btnContainer.children('.custom-input').val('');
+	    }
+	});
+
+	$('.player-top-btns .publish').click(function(){
+		$(this).addClass('options-visible');
+	})
+
+	$(document).click(function (e){
+	    var btnContainer = $(".player-top-btns .publish, .publish-options");
+
+	    if (!btnContainer.is(e.target) && btnContainer.has(e.target).length === 0){
+	        btnContainer.removeClass('options-visible');
+	    }
+	});
+
+	$('.view-songs .custom-input').on('keypress', function(){
+	    if( $(this).val() ){
+	    	$(this).parent().addClass('results-visible');
+	    } 
+	});
+
+</script>
 
 </body>
 </html>
