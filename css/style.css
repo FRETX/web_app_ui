@@ -9,11 +9,7 @@ Can Goktas / @cangokt
 
 html {-webkit-font-smoothing: antialiased;}
 img{display: block;max-width: 100%;height: auto;}
-
-/* Bootstrap Modal Scrollbar Push Fix */
-.modal {overflow-y: auto;}
-.modal-open {overflow: auto;}
-
+*{outline:none !important;}
 
 /* 
 * Fonts
@@ -252,6 +248,29 @@ header .header-links a:first-child{margin-left: 0;}
 .rate-song .star.empty{background:url('../images/star-empty.svg') no-repeat center center;}
 .rate-song .star:last-child{margin-right:0;}
 
+.modal .modal-body .btn.submit-btn{
+    background: #FFFFFF;
+    border: 2px solid #FB4330;
+    box-shadow: 0 2px 11px 0 rgba(251,67,48,0.20);
+    border-radius: 15px;
+    width: 195px;
+    color: #FB4330;
+    margin: 20px auto 0px;
+    padding: 17px 0;
+}
+.modal .form-group{
+    border: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+.modal .form-control{
+    background: #FFFFFF;
+    border: 1px solid #797979;
+    border-radius: 5px;
+    height: 60px;
+    font-size: 16px;
+    font-family: 'GothamRBk';
+}
 .modal .modal-dialog{
     width: 450px;
 }
@@ -308,8 +327,7 @@ header .header-links a:first-child{margin-left: 0;}
 }
 .modal .modal-body .account-separated{
     margin: 30px 0 0 0;
-    border-top: 1px solid #d0d0d0;
-    padding-top: 30px;
+    /* border-top: 1px solid #d0d0d0; */
 }
 .modal .modal-body .account-separated h4{/* Already have an acco: */
     font-family: GothamRounded-Book;
@@ -330,6 +348,7 @@ header .header-links a:first-child{margin-left: 0;}
     width: 140px;
     height: 55px;
     text-align: center;
+    text-decoration: none !important;
     padding: 14px 0;
 }
 
