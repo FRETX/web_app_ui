@@ -307,7 +307,69 @@
 						"N"
 					</span>
 				</div>
-
+				
+				<div class="new-chord-select first-phase">
+					<div class="new-chords-holder">
+						<a href="#" class="chord">
+							A Maj
+						</a>
+						<a href="#" class="chord">
+							A Maj
+						</a>
+						<a href="#" class="chord">
+							A Maj
+						</a>
+						<a href="#" class="chord">
+							A Maj
+						</a>
+						<a href="#" class="chord">
+							A Maj
+						</a>
+						<a href="#" class="chord">
+							A Maj
+						</a>
+						<a href="#" class="chord">
+							A Maj
+						</a>
+						<a href="#" class="chord">
+							A Maj
+						</a>
+						<a href="#" class="chord">
+							A Maj
+						</a>
+					</div>
+				</div>
+				<div class="new-chord-select second-phase">
+					<div class="new-chords-holder">
+						<a href="#" class="chord">
+							A Maj
+						</a>
+						<a href="#" class="chord">
+							A Maj
+						</a>
+						<a href="#" class="chord">
+							A Maj
+						</a>
+						<a href="#" class="chord">
+							A Maj
+						</a>
+						<a href="#" class="chord">
+							A Maj
+						</a>
+						<a href="#" class="chord">
+							A Maj
+						</a>
+						<a href="#" class="chord">
+							A Maj
+						</a>
+						<a href="#" class="chord">
+							A Maj
+						</a>
+						<a href="#" class="chord">
+							A Maj
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -464,6 +526,28 @@
 	    if( $(this).val() ){
 	    	$(this).parent().addClass('results-visible');
 	    } 
+	});
+
+	$('.add-chord-btn').click(function(){
+		$('.adder-holder').addClass('adder-visible');
+	})
+
+	$('.new-chord-select.first-phase .chord').click(function(){
+		$('.new-chord-select.first-phase .chord').removeClass('selected');
+		$(this).addClass('selected');
+		$(this).parent('.new-chords-holder').addClass('main-chord-selected');
+		$('.new-chord-select.second-phase').addClass('visible');
+	})
+
+	$(document).click(function (e){
+	    var btnContainer = $(".add-chords .chord.add-chord-btn, .add-chords .new-chord-select");
+
+	    if (!btnContainer.is(e.target) && btnContainer.has(e.target).length === 0){
+	        $('.add-chords .chord-adder .adder-holder').removeClass('adder-visible');
+	        btnContainer.removeClass('visible');
+	        $('.add-chords .new-chord-select .new-chords-holder').removeClass('main-chord-selected');
+	        $('.add-chords .new-chord-select .chord').removeClass('selected');
+	    }
 	});
 
 </script>

@@ -111,16 +111,9 @@ header .header-links a:first-child{margin-left: 0;}
 .player-top-btns .publish~.publish-options{width: 275px;float: none;position: absolute;z-index: 0;margin: 10px 0px 0 0px;opacity: 0;transition: opacity .25s ease;overflow: hidden;box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);border-radius: 5px;background: #F4F4F4;}
 .player-top-btns .publish.options-visible~.publish-options{opacity: 1;z-index: 1;}
 .player-top-btns .publish~.publish-options .form-control{margin-bottom: 15px;}
-.player-top-btns .publish~.publish-options .submit-holder{
-    margin: 15px 20px;
-}
+.player-top-btns .publish~.publish-options .submit-holder{margin: 15px 20px;}
 .player-top-btns .publish~.publish-options .submit-holder .btn{color: #FB4330;font-family: 'GothamRBd';}
-.player-top-btns .publish~.publish-options .submit-holder .btn img{
-    width: 27px;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 5px 12px 6px -40px;
-}
+.player-top-btns .publish~.publish-options .submit-holder .btn img{width: 27px;display: inline-block;vertical-align: middle;margin: 5px 12px 6px -40px;}
 
 .player-top-btns .view-songs~.song-list-holder .song-list{width: 500px;float: none;position: absolute;z-index: -1;margin: 10px 0 0 35px;opacity: 0;transition: opacity .25s ease;height: 400px;overflow: hidden;box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);border-radius: 5px;}
 .player-top-btns .view-songs~.song-list-holder .song-list .song{height: 80px;width: 100%;display:block;text-decoration: none !important;}
@@ -161,6 +154,7 @@ header .header-links a:first-child{margin-left: 0;}
 .fret-with-video.smaller .video-area iframe{}
 .fret-with-video.smaller .fret-area{height: 325px;background-size: 485px;margin-top: 5px;}
 .fret-with-video.smaller .video-area{height: 360px;}
+
 .fret-area{background: url('../images/fret.png') no-repeat center center;background-position: top center;background-size: 570px;position:relative;height: 425px;}
 .fret-area .line{width: 100%;height: 55px;display: block;font-size: 0;}
 .fret-area .line:nth-child(1){margin: 27px 0 0 0;}
@@ -182,6 +176,7 @@ header .header-links a:first-child{margin-left: 0;}
 .fret-area .line:nth-child(4) .dot{margin-top: 5px;}
 .fret-area .line:nth-child(5) .dot{margin-top: 7px;}
 .fret-area .line:nth-child(6) .dot{margin-top: 8px;}
+
 .fret-with-video.smaller .dominant-hand-select{bottom: -36px;}
 .fret-with-video.smaller .fret-area .line{height: 50px;margin-left: 104px;}
 .fret-with-video.smaller .fret-area .line:nth-child(1){margin-top: 21px;}
@@ -201,6 +196,7 @@ header .header-links a:first-child{margin-left: 0;}
 .fret-with-video.smaller .fret-area .line .dot:nth-child(2){margin-left: -5px;}
 .fret-with-video.smaller .fret-area .line .dot:nth-child(3){}
 .fret-with-video.smaller .fret-area .line .dot:nth-child(4){margin-left: 13px;}
+
 .dominant-hand-select{position: absolute;left: 50%;bottom: 9px;margin-left: -121px;}
 .dominant-hand-select a{color: #fff;font-family: 'GothamRBd';width: 110px;height: 32px;border-radius: 6px;border: 1px solid #FFFFFF;display: inline-block;margin-right: 20px;text-decoration: none !important;}
 .dominant-hand-select a img{width: 22px;height: 26px;display: inline-block;margin: 2px 5px 2px 8px;}
@@ -229,7 +225,7 @@ header .header-links a:first-child{margin-left: 0;}
 .song-recommendations .recommendation-box .song-info{position: absolute;bottom: 11px;left: 15px;font-size: 20px;color: #FFFFFF;line-height: 24px;}
 
 .add-chords{}
-.add-chords .chord-adder{width: 970px;margin: 5px auto;height: 120px;box-sizing: content-box;white-space: nowrap;overflow: hidden;user-select: none;position: relative;background-image: linear-gradient(-180deg, #323232 0%, #191919 100%);border: 2px solid #323232;box-shadow: 0 1px 6px 0 rgba(0,0,0,0.40);border-radius: 5px;}
+.add-chords .chord-adder{width: 970px;margin: 5px auto;height: 120px;box-sizing: content-box;white-space: nowrap;/* overflow: hidden; */user-select: none;position: relative;background-image: linear-gradient(-180deg, #323232 0%, #191919 100%);border: 2px solid #323232;box-shadow: 0 1px 6px 0 rgba(0,0,0,0.40);border-radius: 5px;}
 .add-chords .chord-adder .adder-holder{top: 0px;bottom: 0px;left: 0px;overflow: auto;user-select: none;text-align: center;padding: 11px 0;}
 .add-chords .chord{background-image: linear-gradient(-180deg, #393939 3%, #191919 100%);border: 2px solid #FCFCFC;box-shadow: 0 1px 3px 0 rgba(255,255,255,0.47);border-radius: 30px;width: 100px;height: 100px;display: inline-block;margin-right: 25px;vertical-align: middle;text-decoration: none !important;position: relative;cursor: pointer;}
 .add-chords .chord.chord-added{background-image: linear-gradient(-180deg, #AF00FF 0%, #5100AA 100%);border: 2px solid #FCFCFC;box-shadow: 0 1px 3px 0 rgba(255,255,255,0.47);border-radius: 30px;}
@@ -248,109 +244,61 @@ header .header-links a:first-child{margin-left: 0;}
 .rate-song .star.empty{background:url('../images/star-empty.svg') no-repeat center center;}
 .rate-song .star:last-child{margin-right:0;}
 
-.modal .modal-body .btn.submit-btn{
-    background: #FFFFFF;
-    border: 2px solid #FB4330;
-    box-shadow: 0 2px 11px 0 rgba(251,67,48,0.20);
-    border-radius: 15px;
-    width: 195px;
-    color: #FB4330;
-    margin: 20px auto 0px;
-    padding: 17px 0;
-}
-.modal .form-group{
-    border: none;
-    margin: 0 0 10px 0;
-    padding: 0;
-}
-.modal .form-control{
-    background: #FFFFFF;
-    border: 1px solid #797979;
-    border-radius: 5px;
-    height: 60px;
-    font-size: 16px;
-    font-family: 'GothamRBk';
-}
-.modal .modal-dialog{
-    width: 450px;
-}
+.modal .modal-body .btn.submit-btn{background: #FFFFFF;border: 2px solid #FB4330;box-shadow: 0 2px 11px 0 rgba(251,67,48,0.20);border-radius: 15px;width: 195px;color: #FB4330;margin: 20px auto 0px;padding: 17px 0;}
+.modal .form-group{border: none;margin: 0 0 10px 0;padding: 0;}
+.modal .form-control{background: #FFFFFF;border: 1px solid #797979;border-radius: 5px;height: 60px;font-size: 16px;font-family: 'GothamRBk';}
+.modal .modal-dialog{width: 450px;}
 .modal .modal-content{}
-.modal .modal-body{
-    padding: 20px 30px;
-}
-.modal .modal-body h3{
-    font-size: 20px;
-    text-align: center;
-    margin: 0 0 15px 0;
-    font-family: 'GothamRBd';
-}
+.modal .modal-body{padding: 20px 30px;}
+.modal .modal-body h3{font-size: 20px;text-align: center;margin: 0 0 15px 0;font-family: 'GothamRBd';}
 .modal .modal-body h4{}
-.modal .modal-body .btn{
-    font-size: 20px;
+.modal .modal-body .btn{font-size: 20px;color: #fff;display: block;border-radius: 5px;height: 70px;margin-bottom: 10px;}
+.modal .modal-body .btn.fb{background: #3C5A99;}
+.modal .modal-body .btn.tw{background: #55ACEE;}
+.modal .modal-body .btn.email{background: #95A5A6;}
+.modal .modal-body .btn.fb img{display: inline-block;width: 14px;margin: 20px 25px 21px -44px;}
+.modal .modal-body .btn.tw img{display: inline-block;width: 30px;margin: 20px 37px 21px -62px;}
+.modal .modal-body .btn.email img{display: inline-block;width: 30px;margin: 20px 49px 21px -62px;}
+.modal .modal-body .separator-text{font-size: 20px;color: #686868;font-family: 'GothamRBk';text-align: center;display: block;margin-bottom: 10px;}
+.modal .modal-body .account-separated{margin: 30px 0 0 0;/* border-top: 1px solid #d0d0d0; */}
+.modal .modal-body .account-separated h4{font-family: GothamRounded-Book;font-size: 18px;color: #686868;display: inline-block;margin: 20px 0;}
+.modal .modal-body .account-separated .modal-redirect{background: #FFFFFF;float: right;box-shadow: 0 2px 11px 0 rgba(251,67,48,0.20);border-radius: 15px;font-family: GothamRounded-Medium;font-size: 20px;color: #FB4330;display: inline-block;width: 140px;height: 55px;text-align: center;text-decoration: none !important;padding: 14px 0;}
+
+
+.add-chords .new-chord-select{opacity: 0;z-index: -1;position: absolute;top: -90px;left: 50%;transform: translateX(-50%);width: 300px;height: 75px;background: #fff;box-sizing: content-box;white-space: nowrap;overflow: hidden;user-select: none;border-radius: 5px;/* Combined Shape: */background-image: linear-gradient(-180deg, #FFFFFF 0%, #EEEEEE 100%);border: 5px solid #fff;box-shadow: 0 0px 8px 6px rgba(0, 0, 0, 0.49);border-radius: 5px;}
+.add-chords .adder-visible .new-chord-select.first-phase{opacity: 1;z-index: 1;}
+.add-chords .new-chord-select .chord{
+    width: 75px;
+    height: 75px;
+    margin-right: 0px;
+    border-radius: 20px;
     color: #fff;
-    display: block;
-    border-radius: 5px;
-    height: 70px;
-    margin-bottom: 10px;
-}
-.modal .modal-body .btn.fb{
-    background: #3C5A99;
-}
-.modal .modal-body .btn.tw{
-    background: #55ACEE;
-}
-.modal .modal-body .btn.email{
-    background: #95A5A6;
-}
-.modal .modal-body .btn.fb img{
-    display: inline-block;
-    width: 14px;
-    margin: 20px 25px 21px -44px;
-}
-.modal .modal-body .btn.tw img{
-    display: inline-block;
-    width: 30px;
-    margin: 20px 37px 21px -62px;
-}
-.modal .modal-body .btn.email img{
-    display: inline-block;
-    width: 30px;
-    margin: 20px 49px 21px -62px;
-}
-.modal .modal-body .separator-text{/* or: */
-    font-size: 20px;
-    color: #686868;
-    font-family: 'GothamRBk';
+    font-family: 'GothamRM';
+    color: #FFFFFF;
+    top: 50%;
     text-align: center;
-    display: block;
-    margin-bottom: 10px;
+    padding: 25px 0;
 }
-.modal .modal-body .account-separated{
-    margin: 30px 0 0 0;
-    /* border-top: 1px solid #d0d0d0; */
+.add-chords .new-chord-select .new-chords-holder{
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    overflow: auto;
+    user-select: none;
+    position: relative;
 }
-.modal .modal-body .account-separated h4{/* Already have an acco: */
-    font-family: GothamRounded-Book;
-    font-size: 18px;
-    color: #686868;
-    display: inline-block;
-    margin: 20px 0;
+.add-chords .new-chord-select .new-chords-holder.main-chord-selected .chord{opacity: .65;}
+.add-chords .new-chord-select .new-chords-holder .chord.selected{opacity: 1;}
+.add-chords .new-chord-select.second-phase{
+  opacity: 0;
+  z-index: -1;
+  top: -190px;
 }
-.modal .modal-body .account-separated .modal-redirect{/* Rectangle 7: */
-    background: #FFFFFF;
-    float: right;
-    box-shadow: 0 2px 11px 0 rgba(251,67,48,0.20);
-    border-radius: 15px; /* Login: */
-    font-family: GothamRounded-Medium;
-    font-size: 20px;
-    color: #FB4330;
-    display: inline-block;
-    width: 140px;
-    height: 55px;
-    text-align: center;
-    text-decoration: none !important;
-    padding: 14px 0;
+.add-chords .new-chord-select.second-phase.visible{
+  opacity: 1;
+  z-index: 1;
 }
+
 
 /* 
 * Media Queries
