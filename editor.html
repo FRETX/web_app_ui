@@ -50,7 +50,7 @@
 <section class="player-top-btns mini">
 	<div class="container">
 		
-		<div class="col-md-6">
+		<div class="col-sm-6">
 			<a href="#" class="btn view-songs">
 				<img src="images/plus-ico.png" alt="">
 				Create new song
@@ -111,7 +111,7 @@
 			
 		</div>
 
-		<div class="col-md-6">
+		<div class="col-sm-6">
 			<div class="share-song-holder">
 				<a href="#" class="btn share-song publish">
 					<img src="images/share-ico.png" alt="">
@@ -510,7 +510,8 @@
 	    }
 	});
 
-	$('.player-top-btns .publish').click(function(){
+	$('.player-top-btns .publish').click(function(e){
+		e.preventDefault();
 		$(this).addClass('options-visible');
 	})
 
@@ -528,11 +529,13 @@
 	    } 
 	});
 
-	$('.add-chord-btn').click(function(){
+	$('.add-chord-btn').click(function(e){
+		e.preventDefault();
 		$('.adder-holder').addClass('adder-visible');
 	})
 
-	$('.new-chord-select.first-phase .chord').click(function(){
+	$('.new-chord-select.first-phase .chord').click(function(e){
+		e.preventDefault();
 		$('.new-chord-select.first-phase .chord').removeClass('selected');
 		$(this).addClass('selected');
 		$(this).parent('.new-chords-holder').addClass('main-chord-selected');

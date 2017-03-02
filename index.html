@@ -41,8 +41,8 @@
 			Get FretX
 		</a>
 		<div class="header-links">
-			<a href="#">Sign Up</a>
-			<a href="#">Login</a>
+			<a href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a>
+			<a href="#" data-toggle="modal" data-target="#loginModal">Login</a>
 		</div>
 	
 	</div>
@@ -51,7 +51,7 @@
 <section class="player-top-btns">
 	<div class="container">
 		
-		<div class="col-md-6">
+		<div class="col-sm-6">
 			<a href="#" class="btn view-songs">
 				<img src="images/plus-ico.png" alt="">
 				View & Add Songs
@@ -147,7 +147,7 @@
 			
 		</div>
 
-		<div class="col-md-6">
+		<div class="col-sm-6">
 			<div class="share-song-holder">
 				<a href="#" class="btn share-song">
 					<img src="images/share-ico.png" alt="">
@@ -183,39 +183,39 @@
 			<div class="fret-holder">
 				<div class="line">
 					<div class="dot blue"></div>
-					<div class="dot"></div>
-					<div class="dot"></div>
-					<div class="dot"></div>
+					<div class="dot blue"></div>
+					<div class="dot blue"></div>
+					<div class="dot blue"></div>
 				</div>
 				<div class="line">
 					<div class="dot blue"></div>
-					<div class="dot"></div>
-					<div class="dot"></div>
-					<div class="dot"></div>
+					<div class="dot blue"></div>
+					<div class="dot blue"></div>
+					<div class="dot blue"></div>
 				</div>
 				<div class="line">
-					<div class="dot"></div>
+					<div class="dot blue"></div>
 					<div class="dot red"></div>
-					<div class="dot"></div>
-					<div class="dot"></div>
+					<div class="dot blue"></div>
+					<div class="dot blue"></div>
 				</div>
 				<div class="line">
-					<div class="dot"></div>
+					<div class="dot blue"></div>
 					<div class="dot red"></div>
-					<div class="dot"></div>
-					<div class="dot"></div>
+					<div class="dot blue"></div>
+					<div class="dot blue"></div>
 				</div>
 				<div class="line">
-					<div class="dot"></div>
+					<div class="dot blue"></div>
 					<div class="dot red"></div>
-					<div class="dot"></div>
-					<div class="dot"></div>
+					<div class="dot blue"></div>
+					<div class="dot blue"></div>
 				</div>
 				<div class="line">
-					<div class="dot"></div>
-					<div class="dot"></div>
-					<div class="dot"></div>
-					<div class="dot"></div>
+					<div class="dot blue"></div>
+					<div class="dot blue"></div>
+					<div class="dot blue"></div>
+					<div class="dot blue"></div>
 				</div>
 			</div>
 			
@@ -310,6 +310,118 @@
 	</div>
 </section>
 
+<div id="loginModal" class="modal fade login-signup-flow" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+
+	    <div class="modal-content">
+		    <div class="modal-body">
+				<a href="#" class="btn fb">
+		        	<img src="images/fb-ico.svg" alt="">
+		        	Login with Facebook
+		        </a>
+		        <a href="#" class="btn tw">
+		        	<img src="images/tw-ico.svg" alt="">
+		        	Login with Twitter
+		        </a>
+		        <span class="separator-text">or</span>
+		        <form class="login-form">
+		        	<div class="form-group">
+		        		<input type="text" placeholder="Email or Username" class="form-control">
+		        	</div>
+		        	<div class="form-group">
+		        		<input type="password" placeholder="Password" class="form-control">
+		        	</div>
+		        	<a href="#" class="btn submit-btn">
+			        	Login
+			        </a>
+		        </form>
+		        <div class="account-separated">
+		        	<h4>
+		        		Don't have an account?
+		        	</h4>
+		        	<a href="#" data-toggle="modal" data-target="#signupModal" data-dismiss="modal" class="modal-redirect">
+		        		Sign Up
+		        	</a>
+		        </div>	
+	      	</div>
+	    </div>
+
+	</div>
+</div>
+
+<div id="signupModal" class="modal fade login-signup-flow" tabindex="-1" role="dialog">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	      	<h3>
+	      		Signup today to lorem ipsum dolor sit amet and lem yelid ve lem yuled
+	      	</h3>
+	      	<a href="#" class="btn fb">
+	        	<img src="images/fb-ico.svg" alt="">
+	        	Sign up with Facebook
+	        </a>
+	        <a href="#" class="btn tw">
+	        	<img src="images/tw-ico.svg" alt="">
+	        	Sign up with Twitter
+	        </a>
+	        <span class="separator-text">or</span>
+	        <a href="#" class="btn email" data-toggle="modal" data-target="#signupModalMail" data-dismiss="modal" class="modal-redirect">
+	        	<img src="images/mail-ico.svg" alt="">
+	        	Sign up with Email
+	        </a>
+
+	        <div class="account-separated">
+	        	<h4>
+	        		Already a member?
+	        	</h4>
+	        	<a href="#" data-toggle="modal" data-target="#loginModal" data-dismiss="modal" class="modal-redirect">
+	        		Login
+	        	</a>
+	        </div>	
+
+	      </div>
+	    </div>
+	  </div>
+</div>
+
+<div id="signupModalMail" class="modal fade login-signup-flow" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+
+  		<a href="#" class="btn fb">
+        	<img src="images/fb-ico.svg" alt="">
+        	Sign up with Facebook
+        </a>
+        <a href="#" class="btn tw">
+        	<img src="images/tw-ico.svg" alt="">
+        	Sign up with Twitter
+        </a>
+        <span class="separator-text">or</span>
+        <form class="signup-form">
+        	<div class="form-group">
+        		<input type="email" placeholder="Email Adress" class="form-control">
+        	</div>
+        	<div class="form-group">
+        		<input type="text" placeholder="Name & Surname" class="form-control">
+        	</div>
+        	<div class="form-group">
+        		<input type="text" placeholder="Username" class="form-control">
+        	</div>
+        	<div class="form-group">
+        		<input type="password" placeholder="Password" class="form-control">
+        	</div>
+
+        	<a href="#" class="btn submit-btn">
+	        	Sign Up
+	        </a>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Scripts -->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -339,9 +451,39 @@
 
 	(function($){
         $(window).on("load",function(){
-            // $(".player-top-btns .song-list").mCustomScrollbar();
+            $(".player-top-btns .song-list").mCustomScrollbar();
         });
     })(jQuery);
+
+    $('.player-top-btns .share-song').click(function(e){
+		e.preventDefault();
+		$('.player-top-btns .share-options').css('opacity', '1');
+		$('.player-top-btns .share-options').css('z-index', '1');
+		
+	})
+
+	$(document).click(function (e){
+	    var btnContainer = $(".player-top-btns .share-song");
+
+	    if (!btnContainer.is(e.target) && btnContainer.has(e.target).length === 0){
+	        $('.player-top-btns .share-options').css('opacity', '0');
+	        $('.player-top-btns .share-options').css('z-index', '-1');
+	    }
+	});
+
+	$(document).keyup(function(e) {
+     if (e.keyCode == 27) { // escape key map
+        $('.player-top-btns .share-options').css('opacity', '0');
+	    $('.player-top-btns .share-options').css('z-index', '-1');
+	    $(".player-top-btns .view-songs, .song-list").removeClass('input-visible');
+	    $(".player-top-btns .view-songs, .song-list").removeClass('results-visible');
+	    $(".player-top-btns .view-songs, .song-list").children('.custom-input').val('');
+	    $('.add-chords .chord-adder .adder-holder').removeClass('adder-visible');
+        $(".add-chords .chord.add-chord-btn, .add-chords .new-chord-select").removeClass('visible');
+        $('.add-chords .new-chord-select .new-chords-holder').removeClass('main-chord-selected');
+        $('.add-chords .new-chord-select .chord').removeClass('selected');
+    }
+});
 
 </script>
 </body>
