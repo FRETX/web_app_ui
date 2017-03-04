@@ -522,8 +522,8 @@ header .header-links a:first-child{margin-left: 0;}
   .fret-with-video .fret-area .line:nth-child(5){margin-top: 0px !important;}
   .fret-with-video .fret-area .line:nth-child(6){margin-top: 0px !important;}
   .fret-with-video .fret-area .line .dot{width: 27px !important;height: 27px !important;}
-  .fret-with-video .fret-area .line .dot:nth-child(1){margin-right: 38px !important;margin-left: 35px !important;}
-  .fret-with-video .fret-area .line .dot:nth-child(2){margin-right: 48px !important;}
+  .fret-with-video .fret-area .line .dot:nth-child(1){margin-right: 44px !important;margin-left: 35px !important;}
+  .fret-with-video .fret-area .line .dot:nth-child(2){margin-right: 42px !important;}
   .fret-with-video .fret-area .line .dot:nth-child(3){margin-right: 45px !important;}
   .fret-with-video .fret-area .line .dot:nth-child(4){}
   .fret-with-video{}
