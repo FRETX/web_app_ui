@@ -24,6 +24,7 @@
 	<!-- Link -->
     <link rel="shortcut icon" href="images/favicon.png">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -493,8 +494,16 @@
 <!-- Scripts -->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 
 <script>
+
+	(function($){
+        $(window).on("load",function(){
+            $(".player-top-btns .song-list").mCustomScrollbar();
+        });
+    })(jQuery);
+
 	$('.player-top-btns .view-songs').click(function(){
 		$(this).addClass('input-visible');
 		$(this).children('.custom-input').focus();
